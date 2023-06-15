@@ -44,20 +44,20 @@ export default config({
         //     length: { min: 1 },
         //   },
         // }),
-        // storyDescription: fields.document({
-        //   label: "Content - Story section",
-        //   description: "Shows under Story Headline.",
-        //   formatting: true,
-        // }),
-        // storyImage: fields.image({
-        //   label: "Image - Story section",
-        //   description: "Image that shows side by side with the Story section.",
-        //   validation: {
-        //     isRequired: true,
-        //   },
-        //   directory: "/public/images/home",
-        //   publicPath: "/images/home",
-        // }),
+        storyDescription: fields.document({
+          label: "Content - Story section",
+          description: "Shows under Story Headline.",
+          formatting: true,
+        }),
+        storyImage: fields.image({
+          label: "Image - Story section",
+          description: "Image that shows side by side with the Story section.",
+          validation: {
+            isRequired: true,
+          },
+          directory: "/public/images/home",
+          publicPath: "/images/home",
+        }),
       },
     }),
   },
